@@ -1,0 +1,19 @@
+{
+  "loading": {
+    "action": {
+      "start": "start"
+    },
+    "getter": {
+      "list": "list",
+      "uploadingCount": "uploadingCount"
+    },
+    "mutation": {
+      "changeState": "changeState",
+      "add": "add",
+      "remove": "remove",
+      "clearAll": "clearAll",
+      "startUpload": "startUpload",
+      "endUpload": "endUpload"
+    }
+  }
+}

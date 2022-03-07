@@ -1,0 +1,160 @@
+.my-menu.el-menu {
+  border-right: 0;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: $menu-bg;
+
+  .fa {
+    width: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .el-menu.el-menu--inline {
+    background-color: $sub-menu-bg;
+  }
+  .el-submenu__title {
+    color: $menu-font-color;
+  }
+  .el-menu-item {
+    height: 45px;
+    line-height: 45px;
+    color: $menu-font-color;
+  }
+  .el-menu-item:hover,
+  .el-submenu__title:hover {
+    background-color: transparent;
+    color: #fff;
+
+    .fa, .el-submenu__icon-arrow {
+      color: #fff;
+    }
+  }
+  .el-submenu.is-active,
+  .el-submenu.is-opened {
+    color: #fff;
+
+    .el-submenu__title {
+      color: #fff;
+
+      .fa, .el-submenu__icon-arrow {
+        color: #fff;
+      }
+    }
+  }
+  .el-menu-item.is-active {
+    background-color: $menu-focus-bg;
+    color: #fff;
+  }
+}
+.my-menu:not(.el-menu--collapse) {
+  width: 200px;
+}
+.el-menu--vertical {
+  .el-menu.el-menu--popup {
+    min-width: 160px;
+    background-color: $sub-menu-bg;
+
+    .fa {
+      width: 15px;
+      text-align: center;
+      display: inline-block;
+      margin: 0 5px;
+    }
+    .el-menu-item {
+      color: $menu-font-color;
+      height: 40px;
+      line-height: 40px;
+    }
+    .el-menu-item:hover {
+      cursor: pointer;
+      background-color: transparent;
+      color: #fff;
+
+      .fa {
+        color: #fff;
+      }
+    }
+    .el-menu-item.is-active {
+      background-color: $menu-focus-bg;
+      color: #fff;
+    }
+  }
+}
+.el-dropdown-menu {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  .el-dropdown-menu__item.danger:hover {
+    background-color: #eb6363;
+    color: #fff;
+  }
+  .el-dropdown-menu__item--divided {
+    margin-top: 0;
+  }
+  .el-dropdown-menu__item--divided:before {
+    height: 0;
+  }
+}
+.el-input__inner {
+  border-radius: 0;
+}
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: $border-primary;
+}
+
+.el-button {
+  .fa, .fa.before, .fa.after {
+    margin-right: 5px;
+  }
+}
+
+.el-pagination,
+.el-select-dropdown__item.selected {
+  font-weight: 500;
+}
+
+.el-radio-group {
+  .el-radio-button .el-radio-button__inner {
+    border-radius: 0;
+    border: 1px solid #dcdfe6;
+  }
+  .el-radio-button__orig-radio:checked + .el-radio-button__inner {
+    box-shadow: none;
+  }
+}
+
+.el-tag {
+  border-radius: 0;
+}
+
+// 上传组件样式
+.el-upload-list__item.is-success {
+  i.el-icon-close {
+    display: none;
+  }
+}
+.el-upload-list__item.is-success:active .el-icon-close-tip,
+.el-upload-list__item.is-success:focus .el-upload-list__item-status-label,
+.el-upload-list__item.is-success:hover .el-upload-list__item-status-label {
+  display: inline-block;
+}
+.el-upload-list__item.is-success:active .el-icon-close-tip,
+.el-upload-list__item.is-success:not(.focusing):focus .el-icon-close-tip {
+  display: none;
+}
+.el-upload-list__item.is-uploading {
+  outline: none;
+}
+
+// 树形组件样式
+.el-tree {
+  .el-tree-node__content {
+    line-height: 35px;
+    height: 35px;
+  }
+}
